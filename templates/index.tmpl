@@ -1,0 +1,12 @@
+<html>
+<head>
+  <title>p5.js Server</title>
+</head>
+<body>
+  <ul>
+    {for sketch in sketches}
+      <li><a href="{sketch.src}">{sketch.name}</a>{if sketch.description}, description: {sketch.description}{/if}{if sketch.author}, author: {sketch.author}{/if}</li>
+    {/for}
+  </ul>
+</body>
+</html>
